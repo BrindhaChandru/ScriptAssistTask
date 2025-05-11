@@ -5,8 +5,10 @@ export default defineConfig({
 	server: {
 		port: 5175
 	},
+
 	plugins: [react()],
 	build: {
-		outDir: 'build'
+		outDir: 'build',
+		chunkSizeWarningLimit: 1500,
 	}
 });
